@@ -1,0 +1,98 @@
+
+  
+
+
+
+  .width-box{
+    width: 165px;
+
+  }
+
+  .about-bg{
+    background-color: rgba(0, 0, 0, 0.5) ;
+  }
+  .bg-container{
+    background-color: rgba(0, 0, 0, 0.5) ;
+  }
+  .bg-container-2{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .bg-container-3{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .bg-container-4{
+    background-color: rgba(0, 0, 0);
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+  .mb-10{
+    margin-bottom: calc(1rem * 5) ;
+  }
+
+  .circle{
+    border-radius: 300px;
+  }
+
+  .img-size{
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  .round-photo{
+    border-radius: 100%;
+  }
+
+  .img-size-50{
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .icon-size{
+    font-size: 100%;
+  }
+
+  .ticket-width{
+    width: 100%;
+  }
+  .registration-container{
+    left: 0;
+    width: 100%;
+    
+  }
+
+  .bg-color{
+    background-color: #0a0738;
+  }
+
+  @media (min-width: 768px) { 
+    .ticket-width{
+      width: 50%;
+    }
+    .registration-container{
+      left: 50%;
+      width: 50%;
+      
+    }
+    #tickets {
+      max-width: 50%;
+      display: block !important;
+    }
+    #registration{
+      max-width: 50%;
+      display: inline-block;
+    }
+    .d-flex-md{
+      display: flex;
+    }
+    .bg-container{
+      background-color: #0a0738;
+    }
+    .schedule-width{
+      max-width: 900PX;
+    }
+   }

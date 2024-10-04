@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Tickets and Registration</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon-icon.png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar  z-1">
+    <div class="container-fluid justify-content-center justify-content-md-start">
+      <a class="navbar-brand" href="index.html">
+        <img src="./Assets/Logo bg rm white.png" alt="Logo" width="300" height="100" class="d-inline-block">        
+      </a>
+    </div>
+  </nav>
+
+
+<div class="d-flex-md">
+<!-- Tickets Section -->
+  <div id="tickets" class=" text-center p-3 d-block w-100" >
+  <div class="position-fixed top-0 start-0 ticket-width h-100 z-n1 overflow-hidden">
+    <video autoplay muted loop disablePictureInPicture class="position-absolute top-50 start-50 translate-middle w-auto h-auto">
+        <source src="./Assets/Background.mp4" type="video/mp4"> Your browser does not support video tag
+    </video>
+  </div>
+
+  
+  <div class="container  text-white text-center  p-4 p-md-5 ">
+  <div class="mb-3 d-flex justify-content-center align-items-center">
+    <div>
+      <h1 class="text-white fw-bold me-3" >Tickets</h1>
+    </div>
+
+    <div>
+      <button class="btn btn-light d-md-none fw-bold" onclick="enableRegistration()">Register</button>
+    </div>
+    
+       
+  </div>
+   
+    
+    <div class="row row-cols-md-3 row-cols-2 g-4 justify-content-center p-3">
+      
+      <!-- Membership 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h1 class="card-title fw-bolder">&#163;350</h1>
+            <h5 class="card-title">Platinum Member</h5>
+            <p class="card-text">Full access to all events for each day as well as any formal dinners</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h1 class="card-title fw-bolder">&#163;250</h1>
+            <h5 class="card-title">Gold Membership</h5>
+            <p class="card-text">Full access to all events on each day</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h1 class="card-title fw-bolder">&#163;150</h1>
+            <h5 class="card-title">Silver Membership</h5>
+            <p class="card-text">Full access to all events over two days</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h1 class="card-title fw-bolder">&#163;100</h1>
+            <h5 class="card-title">Day Pass</h5>
+            <p class="card-text">Access to any event over a single day</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership 5 -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h1 class="card-title fw-bolder">&#163;125</h1>
+            <h5 class="card-title">Dinner Ticket</h5>
+            <p class="card-text">Access to the formal evening dinner</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Membership 6 -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h1 class="card-title fw-bolder">&#163;35 <small class="text-muted">per session</small></h1>
+            <h5 class="card-title">Single Session Pass</h5>
+            <p class="card-text">Access to any single public session or workshop</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- Registration -->
+  <div id="registration"  class="  d-none d-md-block" >
+    <div class="position-fixed top-0  bg-color h-100 registration-container  z-n1">
+
+    </div>
+    
+     <div class="d-flex justify-content-center">
+      <div>
+        <button class="btn btn-light btn-lg w-100 mt-2 d-md-none " onclick="enableTicket()">Back</button>
+      </div>
+      
+     </div> 
+
+     <div class="container mb-3 bg-container text-white text-center mt-3 p-5">
+      <div class="mb-3 d-flex">
+        <h1>Register Your Interest</h1>
+      </div>
+
+      <form class="row row-cols-md-1 g-3 needs-validation justify-content-start" novalidate>
+        <div class="d-flex">
+          <label for="name" class="form-label text-start ">Name</label>
+        </div>
+        
+        <div class="col-md mt-0">
+          
+          <input type="text" class="form-control" id="name"  required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          
+        </div>
+        
+        <div class="d-flex">
+          <label for="email" class="form-label">Email</label>
+        </div>
+        <div class="col-md mt-0">
+          
+            <input type="email" class="form-control" id="email"  required>
+            
+            <div class="invalid-feedback">
+              Please write a valid email
+            </div>
+        </div>
+
+        <div class="d-flex">
+          <label for="contact-number text-start-md" class="form-label">Contact Number</label>
+        </div>
+        <div class="col-md mt-0">
+          
+          
+            
+            <input type="tel" class="form-control" id="contact-number"  required>
+            
+            <div class="invalid-feedback">
+              Please write a valid number
+            </div>
+        </div>
+        
+        <div class="d-flex">
+          <label for="company-name" class="form-label">Company Name</label>
+        </div>
+        <div class="col-md">
+          
+          <input type="text" class="form-control" id="Company-name"  required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          
+        </div>
+        
+        
+        
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+            <label class="form-check-label" for="flexCheckDefault" style="color: white;">
+              Receive communications about future events, industry updates, or promotions            </label>
+            
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-light btn-lg" type="submit">Submit</button>
+        </div>
+      </form>
+      
+     </div>
+
+
+    
+  </div>
+
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <script>
+    const ticket = document.getElementById('tickets');
+    const registration = document.getElementById('registration');
+    enableRegistration = () => {
+      
+      ticket.classList.remove("d-block");
+      ticket.classList.add("d-none");
+      registration.classList.remove("d-none");
+      registration.classList.add("d-block");
+      
+    }
+
+    enableTicket = () => {
+      registration.classList.remove("d-block");
+      registration.classList.add("d-none");
+      ticket.classList.remove("d-none");
+      ticket.classList.add("d-block");
+    }
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+
+  </script>
+</body>
+</html>
